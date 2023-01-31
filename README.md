@@ -1,9 +1,9 @@
 ## Demo Two-Factor Authentication
 
-Two-Factor Authentication (2FA)
-One-time Password (OTP)
-HMAC-based One-Time Password (HOTP)
-Time-based One-time Password (TOTP)
+- Two-Factor Authentication (2FA)
+- One-time Password (OTP)
+- HMAC-based One-Time Password (HOTP)
+- Time-based One-time Password (TOTP)
 
 **Two-Factor Authentication** (thường viết tắt là 2FA hoặc TFA) là một phương pháp xác thực người dùng dựa trên 2 yếu tố, một là mật khẩu (thứ phổ biến nhất) và thứ hai là một thứ mà người dùng sở hữu, có quyền truy cập đến, ví dụ như dấu vân tay, tin nhắn SMS, gửi mã token tới Email hoặc tốt hơn nữa là One-time Password (OTP) (mật khẩu một lần có giới hạn hiệu lực theo thời gian).
 
@@ -19,10 +19,11 @@ Giải thích cụ thể hơn đó là: phía Server sẽ so sánh giá trị to
 Giải pháp là chúng ta có thể convert thời gian của cả 2 phía về dạng Unix Timestamp (hay còn gọi với tên khác là Epoch Time) rồi so sánh chúng. Hiểu một cách đơn giản thì Unix Timestamp là số giây đếm tăng dần từ một điểm thời gian cố định trong quá khứ đó là ngày 01/01/1970 (UTC) 00:00:00
 
 ## Flow demo authen 2FA
+
 1. call api /login bằng username/password
 2. call api /enable-2fa để lấy mã liên kết với app
 3. call api /verify-2fa dùng mà OTP trong app để verify
 
-
 ### Ref
+
 - https://trungquandev.com/nodejs-trien-khai-xac-thuc-2-lop-two-factor-authentication-2fa/
